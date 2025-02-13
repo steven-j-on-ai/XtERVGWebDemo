@@ -1,3 +1,5 @@
+English| [简体中文](./README_cn.md)
+
 # XtERVGWebDemo
 ## Introduction
 This project mainly consists of the XtERVG front-end code, which, when paired with the FlyStream Edge AI Video Gateway, can perfectly solve issues such as jitter, delay, and screen corruption in video remote transmission. It also enables ultra-low latency remote real-time playback of AI-annotated video streams.
