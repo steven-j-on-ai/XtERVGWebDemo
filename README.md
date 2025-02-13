@@ -1,0 +1,2 @@
+# XtERVGWebDemo
+本项目为飞流边缘AI视频网关盒子所部署的相关Web代码
