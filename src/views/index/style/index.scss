@@ -1,0 +1,87 @@
+.live-box{
+  display: flex;
+  margin-top: 100px;
+  .video-container {
+    position: relative;
+    height: 485px;
+    .live-video {
+      width: auto;
+      background-color: #101010;
+      height: 485px;
+      margin-right: 20px;
+    }
+    #myCanvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 2;
+      pointer-events: none; /* 允许事件穿透 canvas 到达下面的视频控件 */
+    }
+    .mark-box{
+      height: 40px;
+      display: flex;
+      align-items: center;
+      .el-switch{
+        margin:0 10px;
+      }
+      .el-link{
+        margin-right: 20px;
+      }
+    }
+  }
+  .no-plugin{
+    height: 485px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 785px;
+    background-color: rgba(89,90,92,1);
+    margin-right: 20px;
+    img{
+      width: 122px;
+      height: 122px;
+      margin-bottom: 18px;
+    }
+    .title{
+      color: rgba(206,206,206,1);
+      font-size: 16px;
+      margin-bottom: 18px;
+    }
+    .text{
+      color: rgba(206,206,206,1);
+      font-size: 14px;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      .text1{
+        display: inline-block;
+        width: 390px;
+      }
+    }
+    .el-link{
+      color: #1ABC9C;
+    }
+  }
+  .menu-box{
+    width: 300px;
+    height: 485px;
+    background-color: rgba(249,249,249,1);
+    padding: 30px 15px;
+    .el-input{
+      margin-bottom: 20px;
+    }
+    .el-button{
+      display: block;
+      margin: 30px auto 50px auto;
+      width: 78px;
+      background-color: rgba(26,188,156,1);
+      border: 0;
+    }
+    .tips{
+      line-height: 17px;
+      color: rgba(222,134,143,1);
+      font-size: 12px;
+    }
+  }
+}

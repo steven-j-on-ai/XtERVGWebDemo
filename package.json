@@ -1,0 +1,39 @@
+{
+  "name": "videomonitorplatform",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --open",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@element-plus/icons-vue": "^2.3.1",
+    "axios": "^1.6.8",
+    "element-plus": "^2.7.2",
+    "jquery": "^3.7.1",
+    "normalize.css": "^8.0.1",
+    "nprogress": "^0.2.0",
+    "pinia": "^2.1.7",
+    "qs": "^6.12.1",
+    "sass": "^1.84.0",
+    "ts-md5": "^1.3.1",
+    "vue": "^3.4.21",
+    "vue-router": "4"
+  },
+  "devDependencies": {
+    "@types/jquery": "^3.5.32",
+    "@types/node": "^22.13.1",
+    "@types/nprogress": "^0.2.3",
+    "@types/qs": "^6.9.18",
+    "@vitejs/plugin-vue": "^5.0.4",
+    "fast-glob": "^3.3.2",
+    "typescript": "^5.7.2",
+    "unplugin-auto-import": "^0.19.0",
+    "unplugin-vue-components": "^0.28.0",
+    "vite": "^6.1.0",
+    "vite-plugin-svg-icons": "^2.0.1",
+    "vue-tsc": "^2.0.13"
+  }
+}

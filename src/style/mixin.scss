@@ -1,0 +1,21 @@
+@mixin df{
+    display: flex;
+}
+@mixin df-ac-jsb{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+@mixin df-ac-jc{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@mixin df-jsb{
+    display: flex;
+    justify-content: space-between;
+}
+@mixin df-ac{
+    display: flex;
+    align-items: center;
+}
