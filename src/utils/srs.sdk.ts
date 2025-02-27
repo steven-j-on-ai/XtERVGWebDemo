@@ -201,9 +201,9 @@ export class SrsRtcPlayerAsync {
         var offer = await self.pc.createOffer();
         var sdp = offer.sdp;
 
-        sdp = sdp.replace(/^a=rtpmap:125.*[\r\n]*/gm, '');
         sdp = sdp.replace(/^a=rtcp-fb:125.*[\r\n]*/gm, '');
-        sdp = sdp.replace(/^a=fmtp:125.*[\r\n]*/gm, 'a=rtpmap:125 H264/90000\r\na=rtcp-fb:125 transport-cc\r\na=rtcp-fb:125 nack\r\na=rtcp-fb:125 nack pli\r\na=fmtp:125 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=42e01f\r\n');
+        sdp = sdp.replace(/^a=fmtp:125.*[\r\n]*/gm,'');
+        sdp = sdp.replace(/^a=rtpmap:125.*[\r\n]*/gm, 'a=rtpmap:125 H264/90000\r\na=rtcp-fb:125 goog-remb\r\na=rtcp-fb:125 transport-cc\r\na=rtcp-fb:125 ccm fir\r\na=rtcp-fb:125 nack\r\na=rtcp-fb:125 nack pli\r\na=fmtp:125 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=42e01f\r\n');
 
         offer.sdp = sdp;
         await self.pc.setLocalDescription(offer);
