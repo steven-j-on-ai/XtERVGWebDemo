@@ -195,7 +195,7 @@ export class SrsRtcPlayerAsync {
         var self = this;
         var conf = self.__internal.prepareUrl(url);
         console.log(conf);
-        self.pc.addTransceiver("audio", { direction: "recvonly" });
+        self.pc.addTransceiver("audio", { direction: "sendrecv" });
         self.pc.addTransceiver("video", { direction: "recvonly" });
 
         var offer = await self.pc.createOffer();
